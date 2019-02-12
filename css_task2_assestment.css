@@ -1,0 +1,27 @@
+h1 {
+font-family: 'Roboto Mono', monospace;
+text-align: center;
+}
+.art {
+  margin: auto;
+}
+td {
+  height: 200px;
+  padding: 100px;
+  border: 6px solid white;
+}
+#one {
+  background-color: #880D1E;
+}
+#two {
+  background-color: #DD2D4A;
+}
+#three {
+  background-color: #F26A8D;
+}
+#four {
+background-color: #F49CBB;
+}
+#five {
+background-color: #CBEEF3;
+}

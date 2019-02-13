@@ -1,0 +1,50 @@
+body {
+  background-color: #AFC2D5;
+  margin: auto;
+  border-top: 0px;
+  border-left: 50px;
+  border-right: 50px;
+  border-bottom: 50px;
+  border-style: solid;
+  border-color: #21455F;
+  text-align: center;
+}
+
+
+
+h1 {
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 4em;
+
+}
+h2 {
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 3em;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5em;
+  border: 100px;
+
+}
+label{
+  display:inline-block;
+
+}
+
+input{
+  display: block;
+  margin: auto;
+}
+#sub {
+  background-color: yellow;
+  border: 8px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: white;
+  width: 150px;
+  height: 75px;
+}

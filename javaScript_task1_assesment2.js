@@ -14,13 +14,13 @@
 
 // While Loop
 var i = 0;
-while(i<6){
+while(i<5){
   console.log('hello');
   i++
 }
 
 // For Loop
-for(var i = 0; i < 6; i++) {
+for(var i = 0; i < 5; i++) {
   console.log('hello');
 }
 
@@ -36,9 +36,9 @@ for(var i = 0; i < 6; i++) {
 
 // METHOD ONE
 // While Loop
- var i = 0;
- while(i<26){
-   if(i%3==0){
+ var i = 1;
+ while(i<25){
+   if(i%2==0){
      console.log(i);
    }
    i++
@@ -46,8 +46,8 @@ for(var i = 0; i < 6; i++) {
 
 // METHOD TWO
 // For Loop
-for(var i = 0; i < 26; i++){
-  if(i%3 == 0){
+for(var i = 1; i < 26; i++){
+  if(i%2 == 0){
     console.log(i);
   }
 }

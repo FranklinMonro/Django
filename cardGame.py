@@ -17,8 +17,8 @@ while len(player)!=0 or len(computer):
     plrCard = player.pop()
     comCard = computer.pop()
     table_cards = []
-    table_cards.append(plrCard)
-    table_cards.append(comCard)
+    table_cards.extend(plrCard)
+    table_cards.extend(comCard)
     #player = input("Please enter your name: ")
 
     print("The players cards is:" , plrCard)
@@ -30,11 +30,11 @@ while len(player)!=0 or len(computer):
         print("This is war")
     elif plrCard[1] > comCard[1]:
         print("The player has won")
-        player.append(table_cards)
+        player.extend(table_cards)
         print("The players card count is: " , len(player))
         print("The computers card count is: ", len(computer))
     else:
         print("The computer has won")
-        computer.append(table_cards)
+        computer.extend(table_cards)
         print("The players card count is: " , len(player))
         print("The computers card count is: ", len(computer))

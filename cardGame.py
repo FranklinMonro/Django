@@ -7,27 +7,30 @@ DECKS = [(s,r) for s in SUITE for r in RANKS]# Create the decks
 
 random.shuffle(DECKS)# Shuffle the decks
 
-player = DECKS[:27]# split deck evenly
-computer = DECKS[27:]# split deck evenly
+player = DECKS[:26]# split deck evenly
+computer = DECKS[26:]# split deck evenly
+print("The players card count is: " , len(player))
+print("The computers card count is: ", len(computer))
+plrCard = player.pop()
+comCard = computer.pop()
+table_cards = []
+table_cards.append(plrCard)
+table_cards.append(comCard)
+#player = input("Please enter your name: ")
 
-player_RC = random.randint(0,len(player))#create random number for player index card
-computer_RC = random.randint(0,len(computer))#create random number for computer index card
+print("The players cards is:" , plrCard)
+print("The computers card is:" , comCard)
 
 
-
-while len(player) !=0 or len(computer) !=0:# Exit while loop if player or computer have no more cards
-    player_RC = random.randint(0,len(player))#create random number for player index card
-    computer_RC = random.randint(0,len(computer))#create random number for computer index card
-    if player[player_RC] > computer[computer_RC]:#if loop if player has
-        print("PLAYER WIN")
-        print("The players card count is: ", len(player))
-        print("The computers card count is: ", len(computer))
-        computer.remove(computer[computer_RC])# Remove card from computer
-        player.append(computer[computer_RC])# Add card to player
-
-    else:
-        print("PLAYER LOSE")
-        print("The players card count is: ", len(player))
-        print("The computers card count is: ", len(computer))
-        player.remove(player[player_RC])# Remove card from computer
-        computer.append(player[player_RC])# Add card to player
+if plrCard[1] == comCard[1]:
+    print("this is war!")
+elif plrCard[1] > comCard[1]:
+    print("The player has won")
+    player.append(table_cards)
+    print("The players card count is: " , len(player))
+    print("The computers card count is: ", len(computer))
+else:
+    print("The computer has won")
+    computer.append(table_cards)
+    print("The players card count is: " , len(player))
+    print("The computers card count is: ", len(computer))
